@@ -14,12 +14,12 @@ namespace Tutorial.PhoneBook.Application.Contracts
     {
         DbSet<PhoneNumberTypes> PhoneNumberTypes { get; set; }
 
-         DbSet<PhoneNumbers> PhoneNumbers { get; set; }
+        DbSet<PhoneNumbers> PhoneNumbers { get; set; }
 
-         DbSet<Users> Users { get; set; }
+        DbSet<Users> Users { get; set; }
         int DBSaveChanges();
         Task<int> DBSaveChangesAsync(CancellationToken cancellationToken = default);
-       
+
     }
 
 }
