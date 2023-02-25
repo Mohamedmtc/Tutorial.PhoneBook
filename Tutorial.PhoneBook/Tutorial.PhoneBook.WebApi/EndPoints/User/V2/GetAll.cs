@@ -3,12 +3,12 @@ using Azure;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Tutorial.PhoneBook.WebApi.EndPoints.User
+namespace Tutorial.PhoneBook.WebApi.EndPoints.User.v2
 {
     public class GetAll : EndpointBaseSync.WithRequest<GetAllRequest>
     .WithActionResult<GetAllResponse>
     {
-        [ApiVersion("1.0")]
+        [ApiVersion("2.0")]
         [HttpGet(GetAllRequest.Route)]
         [SwaggerOperation(
             Summary = "Get list of All Users",
