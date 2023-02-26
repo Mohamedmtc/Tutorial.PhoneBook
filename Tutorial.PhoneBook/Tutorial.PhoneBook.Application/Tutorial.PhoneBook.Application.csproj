@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Tutorial.PhoneBook.Core\Tutorial.PhoneBook.Core.csproj" />
     <ProjectReference Include="..\Tutorial.PhoneBook.Domain\Tutorial.PhoneBook.Domain.csproj" />
   </ItemGroup>
 
