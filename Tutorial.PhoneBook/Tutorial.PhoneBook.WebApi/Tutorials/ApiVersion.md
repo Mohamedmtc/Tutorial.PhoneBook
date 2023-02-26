@@ -7,9 +7,9 @@ The primary reason we would offer API versioning is that the same method is able
 
 For this tutorial I will be using .NET 6, please make sure you have that installed on your computer. You also have to install the following package:
 
-    `Install-Package Microsoft.AspNetCore.Mvc.Versioning`
+    Install-Package Microsoft.AspNetCore.Mvc.Versioning
 
-    `Install-Package Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer`
+    Install-Package Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer
 
 
 The first thing you have to do is go to your program.cs file and add the following code to the services section:
@@ -20,20 +20,20 @@ The ReportAPIVersions flag is optional, but it can be useful. The function of th
 
 ## Update controllers to accept API versioning
 
-    `[Route("api/v{version:apiVersion}/[controller]")]
-[ApiVersion("1.0")]`
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1.0")]
 
 ##  Integrate .NET Core API Versioning with Swagger
 
 add api version Files
 
-    `ConfigureSwaggerOptions.cs
+    ConfigureSwaggerOptions.cs
     SwaggerDefaultValues.cs
-    `
+
 
 modify the launchSettings.json to add "api" startup location
 
-    `
+
     builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
     builder.Services.AddSwaggerGen(
                 options =>

@@ -3,8 +3,13 @@ using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Reflection;
+using Tutorial.PhoneBook.Application.Contracts;
 using Tutorial.PhoneBook.WebApi.DependencyInjection;
 using Tutorial.PhoneBook.WebApi.Swagger;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using Tutorial.PhoneBook.Application.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddWebApilayerDependencyInjection(builder.Configuration);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-
+builder.Services.AddApplicationDependencyInjection(builder.Configuration);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 builder.Services.AddSwaggerGen(

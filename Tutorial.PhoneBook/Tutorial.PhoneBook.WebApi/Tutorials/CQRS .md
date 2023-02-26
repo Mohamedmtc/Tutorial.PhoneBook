@@ -19,3 +19,19 @@ CQRS helps to decouple operations and make the application more scalable and fle
     Install-Package MediatR
 
     Install-Package MediatR.Extensions.Microsoft.DependencyInjection
+
+## MediatR Functions
+
+MediatR has two kinds of messages it dispatches:
+
+1. Request/response messages, dispatched to a single handler
+    * Send may return a response, but do not have to do it.
+2. Notification messages, dispatched to multiple handlers
+    * Publish never return the result.
+
+
+
+## Add toDependency injection
+
+    services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(IMediatorImplementor).Assembly));
+
