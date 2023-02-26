@@ -7,12 +7,12 @@ using Tutorial.PhoneBook.Application.Business.User.Query;
 
 namespace Tutorial.PhoneBook.WebApi.EndPoints.User
 {
-    public class GetAll : EndpointBaseSync.WithoutRequest
+    public class GetAllEndPoint : EndpointBaseSync.WithoutRequest
     .WithActionResult<GetAllResponse>
     {
         private readonly IMediator _mediator;
 
-        public GetAll(IMediator mediator)
+        public GetAllEndPoint(IMediator mediator)
         {
             _mediator = mediator;
         }
