@@ -15,7 +15,7 @@ namespace Tutorial.PhoneBook.Application.Business.User.Query
             userGetAllV2Output.Result=new List<SelectedUserDto>();
             userGetAllV2Output.Result.Add(new SelectedUserDto());
             userGetAllV2Output.Result.Add(new SelectedUserDto());
-            Task.CompletedTask.Wait();
+            await Task.CompletedTask;
             return userGetAllV2Output;
         }
     }

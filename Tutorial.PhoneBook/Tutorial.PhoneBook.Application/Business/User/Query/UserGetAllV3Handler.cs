@@ -15,7 +15,7 @@ namespace Tutorial.PhoneBook.Application.Business.User.Query
             userGetAllV3Output.Result=new List<SelectedUserV3Dto>();
             userGetAllV3Output.Result.Add(new SelectedUserV3Dto());
             userGetAllV3Output.Result.Add(new SelectedUserV3Dto());
-            Task.CompletedTask.Wait();
+            await Task.CompletedTask;
             return userGetAllV3Output;
         }
     }

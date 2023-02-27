@@ -18,7 +18,6 @@ CQRS helps to decouple operations and make the application more scalable and fle
 
     Install-Package MediatR
 
-    Install-Package MediatR.Extensions.Microsoft.DependencyInjection
 
 ## MediatR Functions
 
