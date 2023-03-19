@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Tutorial.PhoneBook.Application.Contracts;
+using Tutorial.PhoneBook.Application.Contracts.Database;
 
 namespace Tutorial.PhoneBook.WebApi.Controllers
 {
@@ -28,7 +28,7 @@ namespace Tutorial.PhoneBook.WebApi.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
 
-            var users = _DatabaseService.Users.ToList();
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

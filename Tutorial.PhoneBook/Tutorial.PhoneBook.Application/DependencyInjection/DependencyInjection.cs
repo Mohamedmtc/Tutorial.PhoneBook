@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tutorial.PhoneBook.Application.Contracts;
 using MediatR;
 using System.Reflection;
+using Tutorial.PhoneBook.Application.Contracts.MediatR;
 
 namespace Tutorial.PhoneBook.Application.DependencyInjection
 {

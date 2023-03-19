@@ -1,6 +1,6 @@
 ﻿using Tutorial.PhoneBook.Core.Messages;
 
-namespace Tutorial.PhoneBook.WebApi.EndPoints.User
+namespace Tutorial.PhoneBook.WebApi.EndPoints.User.V2
 {
     public class GetAllRequestV2 : BaseRequest
     {

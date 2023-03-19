@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Tutorial.PhoneBook.Application.Contracts;
+using Tutorial.PhoneBook.Application.Contracts.Database;
 using Tutorial.PhoneBook.Application.DependencyInjection;
 using Tutorial.PhoneBook.Core.AppSetting;
 using Tutorial.PhoneBook.Core.DependencyInjection;

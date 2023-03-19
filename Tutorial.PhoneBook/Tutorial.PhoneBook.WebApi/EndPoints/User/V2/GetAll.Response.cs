@@ -1,7 +1,7 @@
 ﻿using Tutorial.PhoneBook.Application.Business.User.Query;
 using Tutorial.PhoneBook.Core.Messages;
 
-namespace Tutorial.PhoneBook.WebApi.EndPoints.User
+namespace Tutorial.PhoneBook.WebApi.EndPoints.User.V2
 {
     public class GetAllResponseV2 : BaseResponse
     {
