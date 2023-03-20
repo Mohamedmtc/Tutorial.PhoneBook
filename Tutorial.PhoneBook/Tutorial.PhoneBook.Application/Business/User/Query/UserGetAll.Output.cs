@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tutorial.PhoneBook.Application.Business.User.Query
+namespace Tutorial.ProjectManagement.Application.Business.User.Query
 {
     public class UserGetAllOutput
     {

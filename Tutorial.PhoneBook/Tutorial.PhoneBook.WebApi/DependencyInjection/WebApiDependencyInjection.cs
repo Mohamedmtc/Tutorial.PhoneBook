@@ -2,10 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Tutorial.PhoneBook.Application.Contracts.Database;
-using Tutorial.PhoneBook.Application.DependencyInjection;
 using Tutorial.PhoneBook.Core.AppSetting;
 using Tutorial.PhoneBook.Core.DependencyInjection;
 using Tutorial.PhoneBook.Presistance.Context;
+using Tutorial.ProjectManagement.Application.DependencyInjection;
 
 namespace Tutorial.PhoneBook.WebApi.DependencyInjection
 {

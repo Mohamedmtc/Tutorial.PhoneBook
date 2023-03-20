@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Tutorial.PhoneBook.Core.Messages;
 
-namespace Tutorial.PhoneBook.Application.Business.User.Query
+namespace Tutorial.ProjectManagement.Application.Business.User.Query
 {
     public class UserGetAllV2Query : BaseRequest, IRequest<UserGetAllV2Output>
     {

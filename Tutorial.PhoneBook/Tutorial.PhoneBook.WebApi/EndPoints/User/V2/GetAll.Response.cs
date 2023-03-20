@@ -1,5 +1,5 @@
-﻿using Tutorial.PhoneBook.Application.Business.User.Query;
-using Tutorial.PhoneBook.Core.Messages;
+﻿using Tutorial.PhoneBook.Core.Messages;
+using Tutorial.ProjectManagement.Application.Business.User.Query;
 
 namespace Tutorial.PhoneBook.WebApi.EndPoints.User.V2
 {

@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tutorial.PhoneBook.Application.Business.User.Query
+namespace Tutorial.ProjectManagement.Application.Business.User.Query
 {
     public class UserGetAllHandler : IRequestHandler<UserGetAllQuery, UserGetAllOutput>
     {
         async Task<UserGetAllOutput> IRequestHandler<UserGetAllQuery, UserGetAllOutput>.Handle(UserGetAllQuery request, CancellationToken cancellationToken)
         {
             await Task.CompletedTask;
-            UserGetAllOutput output = new UserGetAllOutput();   
+            UserGetAllOutput output = new UserGetAllOutput();
             return output;
         }
     }

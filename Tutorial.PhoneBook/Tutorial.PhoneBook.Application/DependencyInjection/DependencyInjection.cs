@@ -7,9 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using MediatR;
 using System.Reflection;
-using Tutorial.PhoneBook.Application.Contracts.MediatR;
 
-namespace Tutorial.PhoneBook.Application.DependencyInjection
+using Tutorial.ProjectManagement.Application.MediatR;
+
+namespace Tutorial.ProjectManagement.Application.DependencyInjection
 {
     public static class DependencyInjection
     {

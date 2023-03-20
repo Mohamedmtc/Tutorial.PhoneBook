@@ -5,7 +5,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Net.WebSockets;
-using Tutorial.PhoneBook.Application.Business.User.Query;
+using Tutorial.ProjectManagement.Application.Business.User.Query;
 
 namespace Tutorial.PhoneBook.WebApi.EndPoints.User.V2
 {
